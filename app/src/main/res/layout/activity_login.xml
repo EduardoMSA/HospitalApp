@@ -17,22 +17,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="#fff"
-            android:textAlignment="center"
+            android:layout_gravity="center"
             android:text="Hospital civil de guadalajara"
-            android:layout_gravity="center">
-        </TextView>
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="36sp"></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#fff"
-            android:text="Login In"
-            android:textSize="30sp"
             android:layout_gravity="center"
-            android:layout_marginTop="25dp">
-        </TextView>
+            android:layout_marginTop="25dp"
+            android:text="Log In"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
 
     </LinearLayout>
 
@@ -65,13 +64,12 @@
 
         <Button
             android:id="@+id/loginInButton"
-            android:layout_marginTop="30dp"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
-            android:text="Login In"
-            android:textColor="#fff">
-        </Button>
+            android:text="Log In"
+            android:textColor="#fff"></Button>
 
     </LinearLayout>
 </LinearLayout>
