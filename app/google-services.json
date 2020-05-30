@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "892203323213",
+    "firebase_url": "https://hospitalcivilapp.firebaseio.com",
+    "project_id": "hospitalcivilapp",
+    "storage_bucket": "hospitalcivilapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892203323213:android:f6ad152e0c382e8484f104",
+        "android_client_info": {
+          "package_name": "com.example.hospitalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892203323213-eii25j3d7k944dcd8n2dla4bo6jd56ga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hospitalapp",
+            "certificate_hash": "8cacc92d213706ec2188b8abb21be37319b94c9e"
+          }
+        },
+        {
+          "client_id": "892203323213-f9gefbrod9m026ipb1oq3anc866f7rq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz11-L5iQXlohEegGlawVik2t2LUFKZfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892203323213-f9gefbrod9m026ipb1oq3anc866f7rq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

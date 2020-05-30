@@ -30,16 +30,8 @@
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="10dp">
-
-        <EditText
-            android:id="@+id/editTextID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="ID"
-            android:inputType="textPersonName" />
+        app:layout_constraintVertical_bias="0.352"
+        tools:layout_editor_absoluteX="16dp">
 
         <EditText
             android:id="@+id/editTextName"
@@ -51,13 +43,13 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextAge"
+            android:id="@+id/editTextID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Age"
-            android:inputType="number" />
+            android:hint="ID"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editTextGender"
@@ -67,6 +59,15 @@
             android:ems="10"
             android:hint="Gender"
             android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number" />
 
         <EditText
             android:id="@+id/editTextAllergies"
@@ -90,6 +91,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="addAppointment"
         android:text="ADD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

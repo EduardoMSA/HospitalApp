@@ -52,22 +52,13 @@
             android:inputType="text">
         </EditText>
 
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
-            android:drawablePadding="10dp"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:hint="PASSWORD"
-            android:inputType="textPassword">
-        </EditText>
-
         <Button
             android:id="@+id/loginInButton"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
+            android:onClick="login"
             android:text="Log In"
             android:textColor="#fff"></Button>
 
