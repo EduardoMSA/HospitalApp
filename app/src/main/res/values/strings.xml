@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HospitalApp</string>
+    <string name="result_text_defualt">Focus the camera to QR</string>
 </resources>
