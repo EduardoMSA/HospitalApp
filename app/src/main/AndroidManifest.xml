@@ -25,7 +25,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QRActivity"></activity>
         <activity android:name=".AddAppointmentActivity" />
         <activity android:name=".ListAppointmentActivity" />
         <activity android:name=".UrgencyActivity" />
@@ -41,7 +40,12 @@
             </intent-filter>
         </activity>
 
-        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

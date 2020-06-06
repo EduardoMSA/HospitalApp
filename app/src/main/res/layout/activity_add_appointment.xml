@@ -34,65 +34,26 @@
         tools:layout_editor_absoluteX="16dp">
 
         <EditText
-            android:id="@+id/editTextName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editTextID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="ID"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editTextGender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Gender"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/editTextAge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Age"
-            android:inputType="number" />
-
-        <EditText
-            android:id="@+id/editTextAllergies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Allergies"
-            android:inputType="textPersonName" />
-
-        <EditText
             android:id="@+id/editTextProblem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Medical Problem"
-            android:inputType="textPersonName" />
+            android:hint="Describe the problem."
+            android:minLines="10"
+            android:maxLines="10"
+            android:gravity="top"
+            android:inputType="textCapSentences|textNoSuggestions|textMultiLine|textPersonName" />
     </LinearLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="addAppointment"
+        android:background="@drawable/buttonstyle"
+        android:onClick="scan"
         android:text="ADD"
+        android:textColor="@color/four"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

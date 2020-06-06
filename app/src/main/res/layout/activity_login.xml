@@ -42,25 +42,17 @@
         android:background="@color/four"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/idEditText"
-            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-            android:drawablePadding="10dp"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:hint="ID"
-            android:inputType="text">
-        </EditText>
-
         <Button
             android:id="@+id/loginInButton"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/buttonstyle"
-            android:onClick="login"
+            android:onClick="scan"
             android:text="Log In"
-            android:textColor="#fff"></Button>
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"></Button>
 
     </LinearLayout>
 </LinearLayout>

@@ -37,29 +37,35 @@ public class MenuActivity extends AppCompatActivity {
         idTextView = (TextView)findViewById(R.id.textViewId);
         mainGridLayout = (GridLayout)findViewById(R.id.gridLayout);
         buttonSignOut = (Button)findViewById(R.id.buttonSignOut);
+        user = new UserObj();
 
-        mRootReference = FirebaseDatabase.getInstance().getReference();
+//        mRootReference = FirebaseDatabase.getInstance().getReference();
+//
+//        mRootReference.child("Usuarios").addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+//                    UserObj userTmp = snapshot.getValue(UserObj.class);
+//                    if(userTmp.getID().equals(getIntent().getStringExtra("ID"))){
+//                        user = userTmp;
+//                        idTextView.setText(user.getID());
+//                        nameTextView.setText(user.getName());
+//                        break;
+//                    }
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//
+//            }
+//        });
 
-        mRootReference.child("Usuarios").addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    UserObj userTmp = snapshot.getValue(UserObj.class);
-                    if(userTmp.getID().equals(getIntent().getStringExtra("ID"))){
-                        user = userTmp;
-                        idTextView.setText(user.getID());
-                        nameTextView.setText(user.getName());
-                        break;
-                    }
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+        idTextView.setText(getIntent().getStringExtra("ID"));
+        user.setID(getIntent().getStringExtra("ID"));
+        nameTextView.setText(getIntent().getStringExtra("Name"));
+        user.setID(getIntent().getStringExtra("Name"));
 
 
 
@@ -91,10 +97,10 @@ public class MenuActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                     else if (current == 1){
-                        /*intent = new Intent(MenuActivity.this, LocationActivity.class);
+                        intent = new Intent(MenuActivity.this, LocationActivity.class);
                         intent.putExtra("User",user);
-                        startActivity(intent);*/
-                        Toast.makeText(MenuActivity.this,"Location not available currently", Toast.LENGTH_LONG).show();
+                        startActivity(intent);
+//                        Toast.makeText(MenuActivity.this,"Location not available currently", Toast.LENGTH_LONG).show();
                     }
                     else if (current == 2){
                         intent = new Intent(MenuActivity.this, UrgencyActivity.class);
